@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Technology Case for Front End Developer at Fourd
 
-## Getting Started
+Case de Technology Perfil Desenvolvedor Frontend
 
-First, run the development server:
+Instruções
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+O case é composto por duas etapas, conforme descrito abaixo. O resultado case será avaliado através do fornecimento do repositório Github contendo os códigos produzidos.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Case
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Etapa 1
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+A UniTech procurou a FourD para o desenvolvimento do Backoffice de seus professores. A grande preocupação da Unitech é que a interface seja acessível de qualquer dispositivo. Para avaliarem nosso trabalho ficamos responsáveis de entregar inicialmente a página inicial do Backoffice.
 
-## Learn More
+Após um excelente trabalho o time de UX chegou ao seguinte resultado: https://tinyurl.com/fourd-front-case
 
-To learn more about Next.js, take a look at the following resources:
+O time do Backend ainda não provisionou as APIs necessárias para o seu time de FrontEnd, porém o seu trabalho já precisa ser iniciado.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Nesta etapa você deverá construir em uma tecnologia de mercado (ReactJS ou Angular) o frontend respeitando a criação do time de UX.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+As APIs deverão ser consumidas em um segundo momento, de imediato proponha uma solução em que consiga Mockar os dados para realização do seu trabalho.
 
-## Deploy on Vercel
+Segue o Swagger para tomar como base como será a API a ser desenvolvida pelo time de Backend: https://iyt9skw6fe.execute-api.us-east-1.amazonaws.com/api-docs/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Disponibilize em um repositório git, em uma branch chamada etapa1 o seu trabalho.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Etapa 2
+
+Para disponibilizarmos para a UniTech será necessário publicar uma imagem no DockerHub com o resultado final apontando nesse momento para a API definitiva: https://iyt9skw6fe.execute-api.us-east-1.amazonaws.com
+
+As alterações dessa etapa deverá estar presente em uma Branch separada (etapa2).
+
+Ao final do case você deverá fornecer o caminho do repositório e da imagem Docker publicada.
