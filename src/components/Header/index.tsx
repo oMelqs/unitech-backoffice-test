@@ -41,19 +41,23 @@ const Header: React.FC = () => {
           </a>
         </div>
         <div className="flex lg:flex-1 lg:justify-end items-center">
-          <BellIcon
-            className="flex h-6 w-6 text-gray lg:mr-0 mr-[22px]"
-            aria-hidden="true"
-          />
+          <a href="#">
+            <BellIcon
+              className="flex h-6 w-6 text-gray lg:mr-0 mr-[22px]"
+              aria-hidden="true"
+            />
+          </a>
           <div className="hidden lg:flex lg:bg-lightGray lg:h-8 lg:w-[2px] lg:mx-[32.5px]"></div>
-          <UserCircleIcon
-            className="h-12 w-12 text-gray lg:pr-4 pr-2"
-            aria-hidden="true"
-          />
-          <span className="hidden lg:flex text-sm text-dark pr-[22px]">
-            {userName}
-          </span>
-          <ChevronDownIcon className="h-4 w-4 text-gray" aria-hidden="true" />
+          <a href="#" className="flex items-center">
+            <UserCircleIcon
+              className="h-12 w-12 text-gray lg:pr-4 pr-2"
+              aria-hidden="true"
+            />
+            <span className="hidden lg:flex text-sm text-dark pr-[22px]">
+              {userName}
+            </span>
+            <ChevronDownIcon className="h-4 w-4 text-gray" aria-hidden="true" />
+          </a>
         </div>
       </nav>
     </div>
