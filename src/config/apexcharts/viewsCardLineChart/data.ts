@@ -14,6 +14,13 @@ const data = {
     },
     fill: {
       type: "gradient",
+      gradient: {
+        type: "vertical",
+        gradientToColors: ["#0346F2"],
+        shadeIntensity: 1,
+        opacityFrom: 0.5,
+        opacityTo: 0,
+      },
     },
     colors: ["#0346F2"],
     grid: {

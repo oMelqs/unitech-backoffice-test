@@ -10,7 +10,7 @@ const ViewsCard: React.FC = () => {
         <span className="text-sm text-dark"> Visualizações</span>
         <InformationCircleIcon className="h-6 w-6 text-gray" />
       </div>
-      <div className="mt-2">
+      <div>
         <Chart options={data.options} series={data.series} type="area" />
       </div>
     </div>
