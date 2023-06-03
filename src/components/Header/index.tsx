@@ -3,17 +3,18 @@ import {
   ChevronDownIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
+import Divider from "../Divider";
 
 const Header: React.FC = () => {
   const userName = "Melquisedeque Linhares";
 
   return (
-    <div className="bg-white border-stroke rounded-3xl m-20">
+    <div className="bg-white border-stroke rounded-3xl mb-10 mt-20">
       <nav
         className="mx-auto flex max-w-7xl lg:items-center justify-between p-6 lg:px-8"
         aria-label="Global"
       >
-        <div className="flex items-center">
+        <div className="flex lg:justify-start items-center">
           <a href="#" className="">
             <img className="h-10 w-auto" src="./logo.svg" alt="" />
           </a>
@@ -21,7 +22,7 @@ const Header: React.FC = () => {
             Website <p />
             Name
           </span>
-          <div className="bg-lightGray h-8 w-[2px] mx-[32.5px]"></div>
+          <Divider />
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           <a href="#" className="text-sm  leading-6 text-gray">
@@ -47,7 +48,7 @@ const Header: React.FC = () => {
               aria-hidden="true"
             />
           </a>
-          <div className="hidden lg:flex lg:bg-lightGray lg:h-8 lg:w-[2px] lg:mx-[32.5px]"></div>
+          <Divider />
           <a href="#" className="flex items-center">
             <UserCircleIcon
               className="h-12 w-12 text-gray lg:pr-4 pr-2"
