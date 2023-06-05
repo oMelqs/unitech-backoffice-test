@@ -10,7 +10,7 @@ const data = {
       },
     },
     dataLabels: {
-      show: false,
+      enabled: false,
     },
     fill: {
       type: "gradient",
@@ -32,7 +32,6 @@ const data = {
     },
     stroke: {
       width: 1.5,
-      curve: "smooth",
     },
     xaxis: {
       labels: {
