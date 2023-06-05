@@ -1,5 +1,5 @@
 "use client";
-import data from "@/config/apexcharts/viewsCardLineChart/data";
+import data from "@/config/apexCharts/viewsCardLineChart/data";
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
 import Chart from "react-apexcharts";
 

@@ -1,25 +1,8 @@
 "use client";
 
-const TodaySchedule: React.FC = () => {
-  const mock = [
-    {
-      time: "08:00",
-      title: "Introdução a Lógica da programação",
-    },
-    {
-      time: "09:00",
-      title: "Condicionais",
-    },
-    {
-      time: "11:00",
-      title: "Do While",
-    },
-    {
-      time: "11:00",
-      title: "Foreach",
-    },
-  ];
+import { TodayScheduleMock } from "@/mocks";
 
+const TodaySchedule: React.FC = () => {
   return (
     <div className="bg-white border-stroke rounded-3xl">
       <div className="items-center pt-5 px-8">
@@ -30,10 +13,10 @@ const TodaySchedule: React.FC = () => {
       <div className="items-center py-8 px-8">
         <span className="text-base font-semibold text-dark">Hoje</span>
       </div>
-      {mock.map((data) => {
+      {TodayScheduleMock.map((data) => {
         return (
           <div
-            key={mock.indexOf(data)}
+            key={TodayScheduleMock.indexOf(data)}
             className="flex items-center pb-10 px-[43px]"
           >
             <div className="w-[54px] h-[25px]">

@@ -6,7 +6,7 @@ import {
 import Divider from "../Divider";
 
 const Header: React.FC = () => {
-  const userName = "Melquisedeque Linhares";
+  const userName = "Annette Black";
 
   return (
     <div className="bg-white border-stroke rounded-3xl mb-10 mt-20">
@@ -51,10 +51,10 @@ const Header: React.FC = () => {
           <Divider />
           <a href="#" className="flex items-center">
             <UserCircleIcon
-              className="h-12 w-12 text-gray lg:pr-4 pr-2"
+              className="h-12 w-12 text-gray"
               aria-hidden="true"
             />
-            <span className="hidden lg:flex text-sm text-dark pr-[22px]">
+            <span className="hidden lg:flex text-sm text-dark lg:pl-4 pl-2 pr-[22px]">
               {userName}
             </span>
             <ChevronDownIcon className="h-4 w-4 text-gray" aria-hidden="true" />
