@@ -6,7 +6,7 @@ import {
   TodaySchedule,
   ViewsCard,
 } from "@/components";
-import useIsMobile from "@/hooks/useIsMobile";
+import { useIsMobile } from "@/hooks/";
 
 export default function Home() {
   const isMobile = useIsMobile();

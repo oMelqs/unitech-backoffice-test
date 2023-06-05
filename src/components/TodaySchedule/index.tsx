@@ -1,8 +1,21 @@
 "use client";
 
-import { TodayScheduleMock } from "@/mocks";
+import { tTodayClasses } from "@/types";
+import { useEffect, useState } from "react";
+
+const url =
+  "https://iyt9skw6fe.execute-api.us-east-1.amazonaws.com/schedules/today";
 
 const TodaySchedule: React.FC = () => {
+  const [todayClasses, setTodayClasses] = useState<tTodayClasses[]>([]);
+
+  useEffect(() => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setTodayClasses(data);
+      });
+  }, []);
   return (
     <div className="bg-white border-stroke rounded-3xl">
       <div className="items-center pt-5 px-8">
@@ -13,10 +26,10 @@ const TodaySchedule: React.FC = () => {
       <div className="items-center py-8 px-8">
         <span className="text-base font-semibold text-dark">Hoje</span>
       </div>
-      {TodayScheduleMock.map((data) => {
+      {todayClasses.map((data) => {
         return (
           <div
-            key={TodayScheduleMock.indexOf(data)}
+            key={todayClasses.indexOf(data)}
             className="flex items-center pb-10 px-[43px]"
           >
             <div className="w-[54px] h-[25px]">

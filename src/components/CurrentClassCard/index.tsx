@@ -1,12 +1,9 @@
+import { UserInfo } from "@/mocks";
 import { MapPinIcon } from "@heroicons/react/20/solid";
 import { ClockIcon, UserCircleIcon } from "@heroicons/react/24/outline";
 import Divider from "../Divider";
 
 const CurrentClassCard: React.FC = () => {
-  const userName = "Annette Black";
-  const userLocation = "Curitiba, PR";
-  const monthProfit = "1000";
-
   return (
     <div className="bg-stroke1 border-stroke rounded-3xl">
       <div className="mx-auto flex max-w-7xl lg:items-center p-6 lg:px-8 justify-between">
@@ -26,10 +23,12 @@ const CurrentClassCard: React.FC = () => {
                 aria-hidden="true"
               />
               <div className="pl-1">
-                <span className="text-sm text-dark">{userName}</span>
+                <span className="text-sm text-dark">{UserInfo.userName}</span>
                 <div className="flex items-center">
                   <MapPinIcon className="flex h-4 w-4 text-gray" />
-                  <span className="text-xs text-dark">{userLocation}</span>
+                  <span className="text-xs text-dark">
+                    {UserInfo.userLocation}
+                  </span>
                 </div>
               </div>
             </a>
@@ -37,7 +36,9 @@ const CurrentClassCard: React.FC = () => {
           <Divider />
           <div className="hidden lg:block items-center">
             <div>
-              <span className="text-dark text-sm">R${monthProfit}</span>
+              <span className="text-dark text-sm">
+                R${UserInfo.monthProfit}
+              </span>
             </div>
             <div>
               <span className="text-dark text-xs">Ganhos deste mês</span>

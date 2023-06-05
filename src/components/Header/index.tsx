@@ -1,3 +1,5 @@
+
+import { UserInfo } from "@/mocks";
 import {
   BellIcon,
   ChevronDownIcon,
@@ -6,8 +8,6 @@ import {
 import Divider from "../Divider";
 
 const Header: React.FC = () => {
-  const userName = "Annette Black";
-
   return (
     <div className="bg-white border-stroke rounded-3xl mb-10 mt-20">
       <nav
@@ -55,7 +55,7 @@ const Header: React.FC = () => {
               aria-hidden="true"
             />
             <span className="hidden lg:flex text-sm text-dark lg:pl-4 pl-2 pr-[22px]">
-              {userName}
+              {UserInfo.userName}
             </span>
             <ChevronDownIcon className="h-4 w-4 text-gray" aria-hidden="true" />
           </a>
