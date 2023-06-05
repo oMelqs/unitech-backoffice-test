@@ -1,10 +1,10 @@
-
 import { UserInfo } from "@/mocks";
 import {
   BellIcon,
   ChevronDownIcon,
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
+import Image from "next/image";
 import Divider from "../Divider";
 
 const Header: React.FC = () => {
@@ -16,7 +16,7 @@ const Header: React.FC = () => {
       >
         <div className="flex lg:justify-start items-center">
           <a href="#" className="">
-            <img className="h-10 w-auto" src="./logo.svg" alt="" />
+            <Image width={40} height={40} src="./logo.svg" alt="" />
           </a>
           <span className="text-dark font-bold pl-2">
             Website <p />

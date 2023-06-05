@@ -1,7 +1,9 @@
 "use client";
 import data from "@/config/apexCharts/viewsCardLineChart/data";
 import { InformationCircleIcon } from "@heroicons/react/24/outline";
-import Chart from "react-apexcharts";
+import dynamic from "next/dynamic";
+
+const Chart = dynamic(() => import("react-apexcharts"), { ssr: false });
 
 const ViewsCard: React.FC = () => {
   return (
