@@ -44,11 +44,11 @@ export default function Home() {
             <div>
               <CurrentClassCard />
             </div>
-            <div className="mt-3">
+            <div className="mt-12">
               <MyClasses />
             </div>
           </div>
-          <div className="col-span-1">
+          <div className="col-span-1 pl-5">
             <div>
               <ViewsCard />
             </div>
