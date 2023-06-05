@@ -1,7 +1,11 @@
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  weight: "500",
+  subsets: ["latin"],
+  display: "swap",
+});
 
 export const metadata = {
   title: "UniTech Teacher Backoffice",
@@ -15,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={poppins.className + " bg-background"}>{children}</body>
     </html>
   );
 }
