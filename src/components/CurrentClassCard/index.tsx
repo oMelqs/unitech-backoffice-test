@@ -9,12 +9,12 @@ const CurrentClassCard: React.FC = () => {
 
   return (
     <div className="bg-stroke1 border-stroke rounded-3xl">
-      <div className="mx-auto flex max-w-7xl lg:items-center p-6 lg:px-8 lg:justify-end">
+      <div className="mx-auto flex max-w-7xl lg:items-center p-6 lg:px-8 justify-between">
         <div className="items-center">
-          <span className="text-dark text-sm">Sua aula começa em</span>
+          <span className="text-dark text-base">Sua aula começa em</span>
           <div className="flex items-center">
             <ClockIcon className="flex h-5 w-5 text-gray" />
-            <span className="text-dark text-sm font-light pl-2">15 min.</span>
+            <span className="text-dark text-xs font-light pl-2">15 min.</span>
           </div>
         </div>
         <div className="flex items-center lg:justify-end">
@@ -29,7 +29,7 @@ const CurrentClassCard: React.FC = () => {
                 <span className="text-sm text-dark">{userName}</span>
                 <div className="flex items-center">
                   <MapPinIcon className="flex h-4 w-4 text-gray" />
-                  <span className="text-sm text-dark">{userLocation}</span>
+                  <span className="text-xs text-dark">{userLocation}</span>
                 </div>
               </div>
             </a>
@@ -40,7 +40,7 @@ const CurrentClassCard: React.FC = () => {
               <span className="text-dark text-sm">R${monthProfit}</span>
             </div>
             <div>
-              <span className="text-dark text-sm">Ganhos deste mês</span>
+              <span className="text-dark text-xs">Ganhos deste mês</span>
             </div>
           </div>
           <Divider />

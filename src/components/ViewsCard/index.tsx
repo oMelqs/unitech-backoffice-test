@@ -7,7 +7,7 @@ const ViewsCard: React.FC = () => {
   return (
     <div className="bg-white border-stroke rounded-3xl">
       <div className="flex justify-between py-5 items-center px-8">
-        <span className="text-sm text-dark"> Visualizações</span>
+        <span className="text-base text-dark">Visualizações</span>
         <InformationCircleIcon className="h-6 w-6 text-gray" />
       </div>
       <div>
